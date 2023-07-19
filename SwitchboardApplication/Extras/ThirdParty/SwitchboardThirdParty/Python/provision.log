@@ -1,0 +1,31 @@
+2023-07-07 13:39:21.083 INFO     VENV_DIR: D:\EPIC_Game\UE_5.2\Engine\Extras\ThirdPartyNotUE\SwitchboardThirdParty\Python
+2023-07-07 13:39:21.083 INFO     Creating virtual environment
+2023-07-07 13:39:25.393 INFO     post_setup() - calling install_scripts()
+2023-07-07 13:39:25.395 INFO     post_setup() - invoking pip install
+2023-07-07 13:39:25.836 INFO     pip> Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+2023-07-07 13:39:26.057 INFO     pip> Collecting pyside2==5.15.2
+2023-07-07 13:39:26.115 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/81/73/830023aa8f06d9b04bf45146fd95f1a0f8644f196713fe98bc678e35ab6c/PySide2-5.15.2-5.15.2-cp35.cp36.cp37.cp38.cp39-none-win_amd64.whl (136.3 MB)
+2023-07-07 13:39:41.236 INFO     pip> Collecting python-osc==1.7.4
+2023-07-07 13:39:41.282 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/eb/76/ece85b5f35d13d684d52a251e5a676c80ff77164485266755f1b62bd92fe/python-osc-1.7.4.tar.gz (23 kB)
+2023-07-07 13:39:42.051 INFO     pip> Collecting requests==2.24.0
+2023-07-07 13:39:42.105 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/45/1e/0c169c6a5381e241ba7404532c16a21d86ab872c9bed8bdcd4c423954103/requests-2.24.0-py2.py3-none-any.whl (61 kB)
+2023-07-07 13:39:42.186 INFO     pip> Collecting six==1.15.0
+2023-07-07 13:39:42.233 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl (10 kB)
+2023-07-07 13:39:42.323 INFO     pip> Collecting shiboken2==5.15.2
+2023-07-07 13:39:42.371 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/85/c2/49578ee1912e06e4f4ffb2cf974b4ee864f6d81bcb3961bc8b96de021cbd/shiboken2-5.15.2-5.15.2-cp35.cp36.cp37.cp38.cp39-none-win_amd64.whl (2.3 MB)
+2023-07-07 13:39:42.688 INFO     pip> Collecting chardet<4,>=3.0.2
+2023-07-07 13:39:42.740 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+2023-07-07 13:39:42.824 INFO     pip> Collecting idna<3,>=2.5
+2023-07-07 13:39:42.867 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl (58 kB)
+2023-07-07 13:39:42.994 INFO     pip> Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+2023-07-07 13:39:43.044 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/56/aa/4ef5aa67a9a62505db124a5cb5262332d1d4153462eb8fd89c9fa41e5d92/urllib3-1.25.11-py2.py3-none-any.whl (127 kB)
+2023-07-07 13:39:43.149 INFO     pip> Collecting certifi>=2017.4.17
+2023-07-07 13:39:43.194 INFO     pip>   Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9d/19/59961b522e6757f0c9097e4493fa906031b95b3ebe9360b2c3083561a6b4/certifi-2023.5.7-py3-none-any.whl (156 kB)
+2023-07-07 13:39:43.252 INFO     pip> Using legacy 'setup.py install' for python-osc, since package 'wheel' is not installed.
+2023-07-07 13:39:43.315 INFO     pip> Installing collected packages: urllib3, shiboken2, idna, chardet, certifi, six, requests, python-osc, pyside2
+2023-07-07 13:39:44.143 INFO     pip>     Running setup.py install for python-osc: started
+2023-07-07 13:39:44.635 INFO     pip>     Running setup.py install for python-osc: finished with status 'done'
+2023-07-07 13:39:49.886 INFO     pip> Successfully installed certifi-2023.5.7 chardet-3.0.4 idna-2.10 pyside2-5.15.2 python-osc-1.7.4 requests-2.24.0 shiboken2-5.15.2 six-1.15.0 urllib3-1.25.11
+2023-07-07 13:39:49.893 INFO     pip> WARNING: You are using pip version 21.2.3; however, version 23.1.2 is available.
+2023-07-07 13:39:49.894 INFO     pip> You should consider upgrading via the 'D:\EPIC_Game\UE_5.2\Engine\Extras\ThirdPartyNotUE\SwitchboardThirdParty\Python\Scripts\pythonw.exe -m pip install --upgrade pip' command.
+2023-07-07 13:39:49.984 INFO     pip install exited with code 0

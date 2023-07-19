@@ -1,0 +1,4 @@
+# This is equivalent to the default, except for the addition of the "noacl"
+# option, which skips any attempt by Cygwin to store POSIX permissions via the
+# Windows host's NTFS access control lists.
+none /cygdrive cygdrive binary,posix=0,user,noacl 0 0
