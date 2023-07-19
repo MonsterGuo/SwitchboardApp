@@ -1,5 +1,5 @@
 {
-    "config": "myndisplay.json",
+    "config": "SWDownload.json",
     "address": "192.168.0.123",
     "transport_path": "",
     "muserver_session_name": "MU_Session",

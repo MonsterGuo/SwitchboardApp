@@ -1,7 +1,7 @@
 {
     "project_name": "SWDownload",
-    "uproject": "D:\\UE_Projection\\SWDownload\\SWDownload.uproject",
-    "engine_dir": "D:\\EPIC_Game\\UE_5.2\\Engine",
+    "uproject": "",
+    "engine_dir": "",
     "engine_sync_method": "Use Existing (do not sync/build)",
     "maps_path": "",
     "maps_filter": "*.umap",
@@ -13,6 +13,9 @@
     "tracing_stat_events": true,
     "osc_server_port": 6000,
     "osc_client_port": 8000,
+    "auto_launch_all": false,
+    "delay_time_connect": 10,
+    "delay_time_launch": 10,
     "p4_enabled": false,
     "p4_sync_path": "",
     "p4_engine_path": "",
@@ -28,7 +31,7 @@
     "muserver_auto_build": true,
     "muserver_auto_endpoint": true,
     "muserver_multicast_endpoint": "230.0.0.1:6666",
-    "muserver_auto_join": true,
+    "muserver_auto_join": false,
     "muserver_archive_dir": "",
     "muserver_working_dir": "",
     "current_level": null,
@@ -80,13 +83,13 @@
         },
         "nDisplay": {
             "settings": {
-                "ndisplay_cfg_file": "",
+                "ndisplay_cfg_file": "D:\\Windows\\ndisplayTest\\Content\\ExampleConfigs\\NDC_CaveUnwrap.uasset",
                 "use_all_available_cores": false,
                 "texture_streaming": true,
                 "render_api": "dx12",
                 "render_mode": "Mono",
                 "render_sync_policy": "Config",
-                "executable_filename": "UnrealEditor.exe",
+                "executable_filename": "D:\\Windows\\ndisplayTest.exe",
                 "ndisplay_cmd_args": "",
                 "ndisplay_exec_cmds": [],
                 "ndisplay_dp_cvars": [],
@@ -95,18 +98,18 @@
                 "priority_modifier": "Normal",
                 "populated_config_itemDatas": [],
                 "minimize_before_launch": true,
-                "primary_device_name": "",
+                "primary_device_name": "node_left",
                 "logging": {
                     "LogConcert": null,
                     "LogDisplayClusterCluster": null,
                     "LogDisplayClusterConfig": null,
                     "LogDisplayClusterEngine": null,
                     "LogDisplayClusterGame": null,
+                    "LogDisplayClusterMedia": null,
                     "LogDisplayClusterNetwork": null,
                     "LogDisplayClusterRender": null,
                     "LogDisplayClusterRenderSync": null,
                     "LogDisplayClusterViewport": null,
-                    "LogDisplayClusterMedia": null,
                     "LogLiveLink": null,
                     "LogRemoteControl": null
                 },
@@ -121,6 +124,111 @@
                 "port": 2980,
                 "roles_filename": "VPRoles.ini",
                 "stage_session_id": 0
+            },
+            "node_left": {
+                "address": "127.0.0.1",
+                "roles": [],
+                "autojoin_mu_server": true,
+                "last_launch_command": "D:\\Windows\\ndisplayTest.exe \".\" -game None -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_left\"  -MaxGPUCount=2 -dc_cfg=\"C:\\Users\\Monst\\AppData\\Local\\Temp\\ndisplay\\A0F4EA234C105B562F8096B5B690FBF5.ndisplay\" -dx12 -dc_dev_mono   -dc_node=node_left Log=node_left.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=0 WinY=300 ResX=600 ResY=400 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_left\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "last_log_path": "Saved\\Logs\\Switchboard\\node_left.log",
+                "last_trace_path": "",
+                "exclude_from_build": false,
+                "ue_command_line": "D:\\Windows\\ndisplayTest.exe \".\" -game  -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_left\"  -MaxGPUCount=2 -dc_cfg=\"D:\\Windows\\ndisplayTest\\Content\\ExampleConfigs\\NDC_CaveUnwrap.uasset\" -dx12 -dc_dev_mono   -dc_node=node_left Log=node_left.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=0 WinY=300 ResX=600 ResY=400 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_left\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "window_position": [
+                    0,
+                    300
+                ],
+                "window_resolution": [
+                    600,
+                    400
+                ],
+                "fullscreen": false,
+                "headless": false,
+                "config_graphics_adapter": -1
+            },
+            "node_front": {
+                "address": "127.0.0.1",
+                "roles": [],
+                "autojoin_mu_server": true,
+                "last_launch_command": "D:\\Windows\\ndisplayTest.exe \".\" -game None -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_front\"  -MaxGPUCount=2 -dc_cfg=\"C:\\Users\\Monst\\AppData\\Local\\Temp\\ndisplay\\0BBFDA0E4BF9D359E30CFA863FC98AFB.ndisplay\" -dx12 -dc_dev_mono   -dc_node=node_front Log=node_front.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=1200 WinY=304 ResX=600 ResY=400 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_front\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "last_log_path": "Saved\\Logs\\Switchboard\\node_front.log",
+                "last_trace_path": "",
+                "exclude_from_build": false,
+                "ue_command_line": "D:\\Windows\\ndisplayTest.exe \".\" -game  -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_front\"  -MaxGPUCount=2 -dc_cfg=\"D:\\Windows\\ndisplayTest\\Content\\ExampleConfigs\\NDC_CaveUnwrap.uasset\" -dx12 -dc_dev_mono   -dc_node=node_front Log=node_front.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=1200 WinY=304 ResX=600 ResY=400 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_front\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "window_position": [
+                    1200,
+                    304
+                ],
+                "window_resolution": [
+                    600,
+                    400
+                ],
+                "fullscreen": false,
+                "headless": false,
+                "config_graphics_adapter": -1
+            },
+            "node_right": {
+                "address": "127.0.0.1",
+                "roles": [],
+                "autojoin_mu_server": true,
+                "last_launch_command": "D:\\Windows\\ndisplayTest.exe \".\" -game None -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_right\"  -MaxGPUCount=2 -dc_cfg=\"C:\\Users\\Monst\\AppData\\Local\\Temp\\ndisplay\\61275EEF4AC45C6BDF359B980BBA9B3F.ndisplay\" -dx12 -dc_dev_mono   -dc_node=node_right Log=node_right.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=600 WinY=900 ResX=600 ResY=400 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_right\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "last_log_path": "Saved\\Logs\\Switchboard\\node_right.log",
+                "last_trace_path": "",
+                "exclude_from_build": false,
+                "ue_command_line": "D:\\Windows\\ndisplayTest.exe \".\" -game  -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_right\"  -MaxGPUCount=2 -dc_cfg=\"D:\\Windows\\ndisplayTest\\Content\\ExampleConfigs\\NDC_CaveUnwrap.uasset\" -dx12 -dc_dev_mono   -dc_node=node_right Log=node_right.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=600 WinY=900 ResX=600 ResY=400 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_right\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "window_position": [
+                    600,
+                    900
+                ],
+                "window_resolution": [
+                    600,
+                    400
+                ],
+                "fullscreen": false,
+                "headless": false,
+                "config_graphics_adapter": -1
+            },
+            "node_ceiling": {
+                "address": "127.0.0.1",
+                "roles": [],
+                "autojoin_mu_server": true,
+                "last_launch_command": "D:\\Windows\\ndisplayTest.exe \".\" -game None -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_ceiling\"  -MaxGPUCount=2 -dc_cfg=\"C:\\Users\\Monst\\AppData\\Local\\Temp\\ndisplay\\71D4AD0E4C863DED0B45ECBBE2353C9F.ndisplay\" -dx12 -dc_dev_mono   -dc_node=node_ceiling Log=node_ceiling.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=600 WinY=0 ResX=600 ResY=300 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_ceiling\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "last_log_path": "Saved\\Logs\\Switchboard\\node_ceiling.log",
+                "last_trace_path": "",
+                "exclude_from_build": false,
+                "ue_command_line": "D:\\Windows\\ndisplayTest.exe \".\" -game  -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_ceiling\"  -MaxGPUCount=2 -dc_cfg=\"D:\\Windows\\ndisplayTest\\Content\\ExampleConfigs\\NDC_CaveUnwrap.uasset\" -dx12 -dc_dev_mono   -dc_node=node_ceiling Log=node_ceiling.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=600 WinY=0 ResX=600 ResY=300 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_ceiling\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "window_position": [
+                    600,
+                    0
+                ],
+                "window_resolution": [
+                    600,
+                    300
+                ],
+                "fullscreen": false,
+                "headless": false,
+                "config_graphics_adapter": -1
+            },
+            "node_floor": {
+                "address": "127.0.0.1",
+                "roles": [],
+                "autojoin_mu_server": true,
+                "last_launch_command": "D:\\Windows\\ndisplayTest.exe \".\" -game None -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_floor\"  -MaxGPUCount=2 -dc_cfg=\"C:\\Users\\Monst\\AppData\\Local\\Temp\\ndisplay\\334DAE8946661602C1EBBFB86A9712AE.ndisplay\" -dx12 -dc_dev_mono   -dc_node=node_floor Log=node_floor.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=600 WinY=300 ResX=600 ResY=600 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_floor\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "last_log_path": "Saved\\Logs\\Switchboard\\node_floor.log",
+                "last_trace_path": "",
+                "exclude_from_build": false,
+                "ue_command_line": "D:\\Windows\\ndisplayTest.exe \".\" -game  -messaging -dc_cluster -nosplash -fixedseed -NoVerifyGC -noxrstereo -xrtrackingonly -RemoteControlIsHeadless   -StageFriendlyName=\"node_floor\"  -MaxGPUCount=2 -dc_cfg=\"D:\\Windows\\ndisplayTest\\Content\\ExampleConfigs\\NDC_CaveUnwrap.uasset\" -dx12 -dc_dev_mono   -dc_node=node_floor Log=node_floor.log -ini:Engine:[/Script/Engine.Engine]:GameEngine=/Script/DisplayCluster.DisplayClusterGameEngine,[/Script/Engine.Engine]:GameViewportClientClassName=/Script/DisplayCluster.DisplayClusterViewportClient,[/Script/Engine.UserInterfaceSettings]:bAllowHighDPIInGameMode=True -ini:Game:[/Script/EngineSettings.GeneralProjectSettings]:bUseBorderlessWindow=True -ini:Input:[/Script/Engine.InputSettings]:DefaultPlayerInputClass=/Script/DisplayCluster.DisplayClusterPlayerInput -unattended -NoScreenMessages -handleensurepercent=0 -UDPMESSAGING_TRANSPORT_MULTICAST=\"230.0.0.1:6666\" -UDPMESSAGING_TRANSPORT_UNICAST=\"127.0.0.1:0\" -UDPMESSAGING_TRANSPORT_STATIC=\"192.168.0.123:9030\" -ExecCmds=\"DisableAllScreenMessages\" -windowed -forceres WinX=600 WinY=300 ResX=600 ResY=600 -CONCERTSERVER=\"SWDownload_MU_Server\" -CONCERTSESSION=\"MU_Session\" -CONCERTDISPLAYNAME=\"node_floor\" -CONCERTISHEADLESS -DPCVars=\"Slate.bAllowNotifications=0,p.Chaos.Solver.Deterministic=1\" ",
+                "window_position": [
+                    600,
+                    300
+                ],
+                "window_resolution": [
+                    600,
+                    600
+                ],
+                "fullscreen": false,
+                "headless": false,
+                "config_graphics_adapter": -1
             }
         },
         "Shogun": {

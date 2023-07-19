@@ -39,6 +39,8 @@ from ...util.p4_changelist_inspection import P4Error
 from . import version_helpers
 from .listener_watcher import ListenerWatcher
 from .redeploy_dialog import RedeployListenerDialog
+from switchboard.switchboard_path import ENGINE_PATH
+
 
 
 class ProgramStartQueueItem:
@@ -2398,7 +2400,6 @@ class DeviceUnreal(Device):
     def get_log_download_dir(cls) -> Optional[pathlib.Path]:
         log_download_dir_setting = \
             DeviceUnreal.csettings['log_download_dir'].get_value().strip()
-
         if log_download_dir_setting:
             log_download_dir = pathlib.Path(log_download_dir_setting)
             if log_download_dir.is_dir() and log_download_dir.is_absolute():
@@ -2407,14 +2408,22 @@ class DeviceUnreal(Device):
                 LOGGER.error(
                     f'Invalid log download dir: {log_download_dir_setting}')
         else:
+            # 如果没有找到就存在了项目路径下的Save下了
             local_project_dir = pathlib.Path(
                 CONFIG.UPROJECT_PATH.get_value()).parent
-            if local_project_dir.is_dir():
+            if len(CONFIG.UPROJECT_PATH.get_value())!=0:
+                if local_project_dir.is_dir():
+                    #LOGGER.warning(f'local_project_dir:{local_project_dir}')
+                    log_download_dir = \
+                        local_project_dir / 'Saved' / 'Logs' / 'Switchboard'
+                    log_download_dir.mkdir(parents=True, exist_ok=True)
+                    return log_download_dir
+            else:
                 log_download_dir = \
-                    local_project_dir / 'Saved' / 'Logs' / 'Switchboard'
+                    ENGINE_PATH/'Core'/'Source'/'Switchboard' / 'Saved' / 'Logs' / 'Switchboard'
                 log_download_dir.mkdir(parents=True, exist_ok=True)
                 return log_download_dir
-
+            
         return None
 
     def reregister_rsync_client(self):
